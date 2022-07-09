@@ -8,6 +8,12 @@ var fetchUser = require('../middleware/fetchUser')
 const JWT_SECRET = "krishankumarkashyap"
 
 
+// home page
+router.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
+
 // ROUTE 1: Create a User using: POST "/api/auth/createuser". No login required
 
 router.post('/createuser', [
